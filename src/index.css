@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --color-utn-blue: #004d9b; /* Color institucional azul UTN */
+  --color-utn-gray: #333333;
+  --color-utn-light-gray: #f8f9fa;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-utn-gray);
+}
+
+.nav-link {
+  @apply text-[#272828] hover:text-black transition-colors font-medium text-[14px];
+}
+
+.btn-utn {
+  @apply bg-utn-blue text-white px-8 py-3 rounded-md font-bold uppercase tracking-wider text-xs transition-all hover:brightness-110;
+}
